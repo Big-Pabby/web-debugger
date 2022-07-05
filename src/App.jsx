@@ -1,14 +1,19 @@
 import './App.css';
 import { useState } from 'react';
 import Connect from './components/connect/connect';
-import loader from './components/Loader/loader';
+import Loader from './components/Loader/loader';
 
 function App() {
   const [clickedWallet, setClickedWallet] = useState({})
+  const [loader, setLoader] = useState(false)
 
   const data = (wallet) => {
     setClickedWallet(wallet)
-    console.log(clickedWallet)
+    setLoader(true)
+  }
+
+  const closeLoader = () => {
+    setLoader(false)
   }
 
   return (
@@ -19,6 +24,7 @@ function App() {
           <Connect data={data}/>
         </div>
       </div>
+      <Loader closeLoader={closeLoader} loading={loader} walletData={clickedWallet} />
     </div>
   );
 }

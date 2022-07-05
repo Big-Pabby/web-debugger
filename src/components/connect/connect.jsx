@@ -1,5 +1,3 @@
-import React from 'react'
-import { useState } from 'react'
 import './connect.css'
 import Metamask from '../../assets/metamask-fox.png'
 import Trust from '../../assets/trust-wallet.png'
