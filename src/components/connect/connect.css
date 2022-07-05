@@ -1,0 +1,51 @@
+.connect {
+    max-width: 700px;
+    height: 80vh;
+    margin: 20px auto;
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.connect-header {
+    margin-top: 20px;
+    padding: 20px 25px;
+}
+
+.wallet {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 0 25px;
+    padding-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 1px solid #19a974;
+}
+
+.card-content h4 {
+    color: #777474;
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #19a974;
+}
+
+.card-logo {
+    width: 30px;
+}
